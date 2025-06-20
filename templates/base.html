@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- The Times 03/Jan/2009 Chancellor on brink of second bailout for banks -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      ₿uilder{% if page.title %} | {{ page.title }}{% endif %}
+    </title>
+    <meta name="description" content="Website for the ₿uilder Meetup.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="₿uilder">
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml">
+    <link href="/index.css" rel="stylesheet" type="text/css">
+     
+    <!-- TODO: Delete these once a custom domain is in place -->
+    <link href="./index.css" rel="stylesheet" type="text/css">
+    <link href="../index.css" rel="stylesheet" type="text/css">
+        
+    <style>
+      header {
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 1.75rem; /* Adjust the font size as needed */
+      }
+
+      nav a {
+        display: inline-block; /* Allow links to wrap to the next line as a whole */
+        margin-right: 10px; /* Add some spacing between links */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- TODO: Update this link once a custom domain is in place -->
+      <h1><a href="/BitcoinBuilderSF/">₿uilder</a></h1>
+      <nav>
+        <a href="https://www.meetup.com/bay-area-bitcoiners/events/308542831" target="_blank">Meetup</a>
+        <a href="https://twitter.com/bbuildersf" target="_blank">Twitter</a>
+        <a href="https://github.com/BitcoinBuilderSF/BitcoinBuilderSF" target="_blank">GitHub</a>
+        <a href="/feed.xml">RSS</a>
+        <a href="https://sfbitcoindevs.org" target="_blank">BitDevs</a>
+        <a href="https://sflightningdevs.org" target="_blank">LitDevs</a>
+      </nav>
+    </header>
+    <hr>
+    <article>
+      {% block content %} {% endblock %}
+    </article>
+    <hr>
+    <footer>
+      <span>
+      </span>
+    </footer>
+  </body>
+</html>

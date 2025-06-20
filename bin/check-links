@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+links=(
+  feed.xml
+  posts
+)
+
+for link in ${links[@]}; do
+  echo Checking ${link}…
+  curl --fail -sS localhost:1111/$link > /dev/null
+done
