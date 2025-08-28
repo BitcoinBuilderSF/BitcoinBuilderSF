@@ -4,8 +4,64 @@
 	<link href="https://bitcoinbuildersf.github.io/BitcoinBuilderSF/feed.xml" rel="self" type="application/atom+xml"/>
   <link href="https://bitcoinbuildersf.github.io/BitcoinBuilderSF/"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2025-07-24T00:00:00+00:00</updated>
+	<updated>2025-08-28T00:00:00+00:00</updated>
 	<id>https://bitcoinbuildersf.github.io/BitcoinBuilderSF/feed.xml</id>
+	<entry xml:lang="en">
+		<title>₿uilder 3</title>
+		<published>2025-08-28T00:00:00+00:00</published>
+		<updated>2025-08-28T00:00:00+00:00</updated>
+		<link rel="alternate" href="https://bitcoinbuildersf.github.io/BitcoinBuilderSF/builder-03/" type="text/html"/>
+		<id>https://bitcoinbuildersf.github.io/BitcoinBuilderSF/builder-03/</id>
+		<content type="html">&lt;h2 id=&quot;vote-on-topics&quot;&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.buildervoting.com&#x2F;socratic_seminars&#x2F;34&#x2F;topics&quot;&gt;Vote on Topics&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;intro-5-min&quot;&gt;Intro (5 min)&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Chatham house rules. No photos&#x2F;videos.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;event.bitcoin.design&quot;&gt;Presidio Bitcoin design week in September&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;10 second intros
+&lt;ul&gt;
+&lt;li&gt;Name, what you do, what you want to get out of ₿uilder&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;live-videcoding-request-20-min&quot;&gt;Live videcoding request (20 min)&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Damian vibe-code based on audience suggestions&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;vibe-coded-app-showcase-3-min&quot;&gt;Vibe Coded App Showcase (3 min)&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;pameldb.github.io&#x2F;blockadoro&#x2F;&quot;&gt;BLOCKADORO: A Pomodoro timer using blocks as the unit of time&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;startup-showcase-20-min&quot;&gt;Startup Showcase (20 min)&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Agicash demo and alpha announcement&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;discussions-60-min&quot;&gt;Discussions (60 min)&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;What is &quot;Hyperbitcoinization&quot;? Audience is encouraged to provide their own definitions!&lt;&#x2F;li&gt;
+&lt;li&gt;Marketing to Normies&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;x.com&#x2F;MasterJamesMace&#x2F;status&#x2F;1960776386802802829&quot;&gt;KPI&#x27;s for a startup building on top of Bitcoin?&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Bitchat. How does it work? How will it evolve?&lt;&#x2F;li&gt;
+&lt;li&gt;Bitcoin Treasury Companies. What are they? How do they work? Will they blow up?&lt;&#x2F;li&gt;
+&lt;li&gt;How to build a network of off-grid solar compute&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;x.com&#x2F;CierrePorbin&#x2F;status&#x2F;1947959754157920528&quot;&gt;Discuss all the ways you can send bitcoin!&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;engineering.block.xyz&#x2F;blog&#x2F;jack-dorseys-vibe-coding-tips&quot;&gt;Jack Dorsey&#x27;s Vibe Coding Tips&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;hr &#x2F;&gt;
+&lt;h2 id=&quot;news-10-min&quot;&gt;News (10 min)&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;investors.block.xyz&#x2F;investor-news&#x2F;news-details&#x2F;2025&#x2F;Block-Unveils-Proto-Rig-and-Proto-Fleet-Marking-a-New-Era-in-Bitcoin-Mining&#x2F;default.aspx&quot;&gt;Block Unveils Proto Rig and Proto Fleet, Marking a New Era in Bitcoin Mining&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;CorpChains announced
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.theblock.co&#x2F;post&#x2F;368399&#x2F;google-cloud-blockchain-gcul&quot;&gt;Google unveils L1 GCUL&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.coindesk.com&#x2F;business&#x2F;2025&#x2F;08&#x2F;12&#x2F;stripe-building-payments-blockchain-tempo-with-paradigm-fortune&quot;&gt;Stripe unveils L1 Tempo&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.circle.com&#x2F;blog&#x2F;introducing-arc-an-open-layer-1-blockchain-purpose-built-for-stablecoin-finance&quot;&gt;Circle unveils L1 Arc&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>₿uilder 2</title>
 		<published>2025-07-24T00:00:00+00:00</published>
