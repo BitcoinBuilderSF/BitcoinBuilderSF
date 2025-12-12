@@ -11,9 +11,9 @@ date = 2025-12-11
 ---
 
 ## Presentations and Q&A
+- [Human Bitcoin Addresses with BIP 353](https://spiralbtc.substack.com/p/making-bitcoin-speak-human) (Mat)
 - [The Bitcoin Merchant Community](https://www.bitcoinmerchantcommunity.org/) (Haley)
 - [Square Bitcoin UX](https://squareup.com/us/en/bitcoin) (Angela)
-- [Human Bitcoin Addresses with BIP 353](https://spiralbtc.substack.com/p/making-bitcoin-speak-human) (Mat)
 
 ---
 
