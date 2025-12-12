@@ -10,3 +10,4 @@ Find a local Bitcoin Builder community in your area. Or start one!
 - [Austin](https://bitcoinbuilderatx.com/)
 - [San Francisco](https://www.bitcoinbuildersf.com/)
 - [Miami](https://buildermiami.xyz/)
+- [Vancouver](https://bitcoinbuildervan.com/)
