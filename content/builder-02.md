@@ -3,8 +3,6 @@ title = "₿uilder 2"
 date = 2025-07-24
 +++
 
-## [Vote on Topics](https://www.buildervoting.com/socratic_seminars/2/topics)
-
 ## Intro (5 min)
 
 - Chatham house rules. No photos/videos.
