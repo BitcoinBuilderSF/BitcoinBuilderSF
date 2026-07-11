@@ -1,0 +1,10 @@
+name = "builders-turin"
+description = "Retro pixel/terminal Zola theme for a Bitcoin builders meetup"
+license = "CC0-1.0"
+homepage = "https://bitcoinbuilderturin.xyz"
+min_version = "0.19.2"
+
+# Ships the Builders Turin look: templates + self-hosted fonts (Press Start 2P,
+# VT323) + og-image. Consuming sites provide content/ and config.toml (title,
+# description, base_url). Branding strings currently live in the templates;
+# an [extra] config pass can externalize them in a follow-up.

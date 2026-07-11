@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- The Times 03/Jan/2009 Chancellor on brink of second bailout for banks -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Builders Turin{% if page.title %} | {{ page.title }}{% endif %}</title>
+    <meta name="description" content="Website for the Builders Turin meetup.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Builders Turin">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="{{ config.title }}">
+    <meta property="og:title" content="{{ config.title }}">
+    <meta property="og:description" content="{{ config.description }}">
+    <meta property="og:url" content="{{ config.base_url | safe }}/">
+    <meta property="og:image" content="{{ config.base_url | safe }}/og-image.jpg">
+    <meta property="og:image:width" content="931">
+    <meta property="og:image:height" content="335">
+    <meta property="og:image:alt" content="Builders Turin — bitcoin builders meetup, Torino">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ config.title }}">
+    <meta name="twitter:description" content="{{ config.description }}">
+    <meta name="twitter:image" content="{{ config.base_url | safe }}/og-image.jpg">
+    <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml">
+    <link href="/fonts/faces.css" rel="stylesheet">
+    <link href="/index.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero-inner">
+        <div class="hero-title">BUILDERS</div>
+        <div class="hero-sub">TURIN</div>
+        <div class="hero-tag">Bitcoin builders meetup · Torino — <span class="url">bitcoinbuilderturin.xyz</span></div>
+      </div>
+      <div class="skyline">
+        <div class="skyline-inner">
+          <div class="bldg" style="left:2%;width:74px;height:80px"></div>
+          <div class="bldg" style="left:8%;width:56px;height:114px"></div>
+          <div class="bldg cy" style="left:14%;width:96px;height:66px"></div>
+          <div class="bldg" style="left:23%;width:60px;height:126px"></div>
+          <div class="bldg" style="left:32%;width:26px;height:122px"></div>
+          <div class="bldg" style="left:36%;width:82px;height:94px"></div>
+          <div class="bldg" style="left:45%;width:62px;height:120px"></div>
+          <div class="bldg cy" style="left:52%;width:104px;height:70px"></div>
+          <div class="bldg" style="left:63%;width:68px;height:110px"></div>
+          <div class="bldg" style="left:71%;width:90px;height:84px"></div>
+          <div class="bldg" style="left:81%;width:56px;height:124px"></div>
+          <div class="bldg" style="left:87%;width:100px;height:68px"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STICKY NAV -->
+    <div class="navbar">
+      <div class="navbar-inner">
+        <a class="brand" href="/">BUILDERS TURIN</a>
+        <nav>
+          <a href="https://luma.com/cwetsnga" target="_blank">Luma</a>
+          <a href="https://t.me/BitcoinBuilderTorino" target="_blank">Telegram</a>
+          <a href="https://github.com/dev-crew-it/BitcoinBuilderTurin" target="_blank">GitHub</a>
+          <a href="/feed.xml">RSS</a>
+          <a href="/cities" target="_blank">Cities</a>
+        </nav>
+      </div>
+    </div>
+
+    {% block content %} {% endblock %}
+
+    <div class="footer">bitcoinbuilderturin.xyz · built by the Torino bitcoin community · design by <a href="https://github.com/vincenzopalazzo">Vincenzo Palazzo</a> · 21M</div>
+  </body>
+</html>

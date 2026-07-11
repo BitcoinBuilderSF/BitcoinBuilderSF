@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="wrap">
+  <div class="section-label">
+    <span class="h">EVENTS</span>
+    <span class="s">Eventi · tap to open</span>
+  </div>
+
+  {% for page in section.pages %}
+  <a class="event" href="{{ page.permalink | safe }}">
+    <div class="event-head">
+      <div class="row">
+        <span class="badge">UPCOMING</span>
+        <span class="no">#{{ page.slug | split(pat="-") | last }}</span>
+      </div>
+      <div class="event-title">{{ page.title }}</div>
+      <div class="event-date">{{ page.date | date(format="%a %d %b %Y") }}</div>
+    </div>
+  </a>
+  {% endfor %}
+
+  <div class="section-label" style="margin-top:30px">
+    <span class="h">COMMUNITY</span>
+    <span class="s">Comunità</span>
+  </div>
+  <div class="community">
+    <a href="https://t.me/BitcoinBuilderTorino"><span class="nm">Telegram</span><span class="hd">@BitcoinBuilderTorino</span></a>
+    <a href="https://github.com/dev-crew-it/BitcoinBuilderTurin"><span class="nm">GitHub</span><span class="hd">/BitcoinBuilderTurin</span></a>
+  </div>
+</div>
+{% endblock content %}

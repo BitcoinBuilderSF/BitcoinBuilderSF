@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Pirata+One&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<style>
+ body{margin:0;background:#e7e4dd;font-family:system-ui,sans-serif}
+ .dv-turn{padding:40px 44px 60px;scroll-margin-top:16px}
+ .dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 24px}
+ .dv-tid{font:600 10px ui-monospace,Menlo,monospace;padding:3px 7px;background:#111;color:#fff;border-radius:4px;text-decoration:none}
+ .dv-tname{font:600 13px/1.2 system-ui,sans-serif;color:#1a1a1a}
+ .dv-opts{display:flex;flex-wrap:wrap;gap:40px;align-items:flex-start}
+ .dv-opt{flex:none;display:flex;flex-direction:column;gap:10px;scroll-margin-top:16px}
+ .dv-oid{font:600 10.5px ui-monospace,Menlo,monospace;padding:3px 7px;background:rgba(0,0,0,.10);color:#1a1a1a;border-radius:5px;text-decoration:none}
+ .dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 12px/1.4 system-ui,sans-serif;color:rgba(0,0,0,.6);max-width:900px}
+ .dv-card{max-width:100%;border-radius:10px;overflow:hidden;box-shadow:0 14px 44px rgba(0,0,0,.30)}
+ .dv-opt:target .dv-oid{background:#f7931a;color:#fff}
+ .dv-next{margin:28px 0 0;font:12px/1.7 system-ui,sans-serif;color:rgba(0,0,0,.55)}
+ a{cursor:pointer}
+ @keyframes bt-blink{50%{opacity:.2}}
+ @keyframes bt-twk{0%,100%{opacity:.45}50%{opacity:1}}
+ @keyframes bt-caret{50%{opacity:0}}
+</style>
+</helmet>
+
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">Bitcoin Builder Torino — events page · 3 directions</span></div>
+<div class="dv-opts">
+
+<!-- ============ OPTION 1A : RETRO ARCADE ============ -->
+<div class="dv-opt" id="1a">
+<div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Retro arcade — full pixel-art, playful, VT323 body for readability</div>
+<div class="dv-card" style="--bg:#0a0b13;--panel:#14162200;--panel2:#12131e;--bcol:#191b2a;--org:#f6b13c;--cy:#5ad1d8;--txt:#e9eaf6;--mut:#8b8fac;--bd:#262a3d;--win:radial-gradient(circle, var(--org) 0 1px, transparent 1.5px);width:900px;background:var(--bg);color:var(--txt);font-family:'VT323',monospace;font-size:20px;line-height:1.35">
+
+  <!-- hero -->
+  <div style="position:relative;height:340px;overflow:hidden;background:radial-gradient(1.5px 1.5px at 40px 44px,#fff,transparent),radial-gradient(1px 1px at 130px 90px,#cfe6ff,transparent),radial-gradient(2px 2px at 300px 56px,#fff,transparent),radial-gradient(1px 1px at 470px 38px,#fff,transparent),radial-gradient(1.5px 1.5px at 620px 96px,#ffd9c9,transparent),radial-gradient(1px 1px at 800px 50px,#fff,transparent),radial-gradient(1px 1px at 230px 140px,#fff,transparent),radial-gradient(1px 1px at 720px 150px,#cfe6ff,transparent),var(--bg)">
+    <div style="position:absolute;top:56px;left:0;right:0;text-align:center;z-index:2">
+      <div style="font-family:'Press Start 2P';font-size:36px;color:var(--org);text-shadow:5px 5px 0 #000;letter-spacing:2px">BUILDER</div>
+      <div style="font-family:'Press Start 2P';font-size:15px;color:var(--cy);margin-top:16px;letter-spacing:8px;text-shadow:3px 3px 0 #000">TORINO</div>
+      <div style="font-size:21px;color:var(--mut);margin-top:18px;letter-spacing:.5px">Bitcoin builders meetup · Torino — <span style="color:var(--cy)">bitcoinbuilderturin.xyz</span></div>
+    </div>
+    <div style="position:absolute;bottom:0;left:0;right:0;height:170px">
+      <div style="position:absolute;bottom:0;left:6px;width:70px;height:80px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:70px;width:54px;height:112px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:120px;width:92px;height:66px;background:var(--bcol);background-image:radial-gradient(circle,var(--cy) 0 1px,transparent 1.5px);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:206px;width:58px;height:124px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:120px;left:301px;width:4px;height:34px;background:var(--bcol)"></div>
+      <div style="position:absolute;bottom:150px;left:294px;width:14px;height:14px;background:var(--org);transform:rotate(45deg);box-shadow:0 0 10px var(--org);animation:bt-twk 2.2s infinite"></div>
+      <div style="position:absolute;bottom:0;left:290px;width:26px;height:120px;background:var(--bcol);background-image:var(--win);background-size:8px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:326px;width:80px;height:92px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:404px;width:60px;height:118px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:462px;width:100px;height:70px;background:var(--bcol);background-image:radial-gradient(circle,var(--cy) 0 1px,transparent 1.5px);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:560px;width:66px;height:108px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:624px;width:88px;height:82px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:710px;width:54px;height:122px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:760px;width:96px;height:66px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:852px;width:64px;height:98px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+    </div>
+  </div>
+
+  <!-- next event -->
+  <div style="padding:36px 40px 8px;background:var(--bg)">
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:18px">
+      <span style="font-family:'Press Start 2P';font-size:11px;color:var(--org)">NEXT EVENT</span>
+      <span style="color:var(--mut)">Prossimo evento</span>
+    </div>
+    <div style="border:2px solid var(--org);box-shadow:7px 7px 0 rgba(0,0,0,.55);background:var(--panel2);padding:26px 28px">
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:16px">
+        <div>
+          <div style="font-family:'Press Start 2P';font-size:15px;color:var(--txt);line-height:1.6">#08 · LIGHTNING NIGHT</div>
+          <div style="color:var(--cy);margin-top:12px;font-size:22px">Thu 24 Jul 2026 · 18:30 → 22:00</div>
+          <div style="color:var(--mut);margin-top:4px;font-size:20px">Toolbox Coworking · Via A. da Montefeltro 2, Torino</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <a href="#" style="font-family:'Press Start 2P';font-size:10px;color:#111;background:var(--org);padding:12px 16px;text-decoration:none;box-shadow:3px 3px 0 #000;text-align:center">RSVP ▸ MEETUP</a>
+          <a href="#" style="font-family:'Press Start 2P';font-size:10px;color:var(--cy);border:2px solid var(--cy);padding:10px 16px;text-decoration:none;text-align:center">+ CALENDAR</a>
+          <a href="#" style="font-size:19px;color:var(--mut);text-align:center;text-decoration:none">↳ directions / indicazioni</a>
+        </div>
+      </div>
+
+      <!-- agenda / follow along -->
+      <div style="margin-top:26px;border-top:1px dashed var(--bd);padding-top:18px">
+        <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px">
+          <span style="font-family:'Press Start 2P';font-size:10px;color:var(--org)">AGENDA</span>
+          <span style="color:var(--mut)">Programma · follow along</span>
+        </div>
+        <sc-for list="{{ sessions }}" as="s" hint-placeholder-count="6">
+          <div style="display:flex;gap:16px;padding:11px 0;border-bottom:1px solid var(--bd)">
+            <div style="min-width:60px;color:var(--org);font-size:20px">{{ s.time }}</div>
+            <div style="flex:1">
+              <div style="font-size:21px;color:var(--txt)">{{ s.title }}
+                <sc-if value="{{ s.live }}" hint-placeholder-val="{{ false }}"><span style="font-family:'Press Start 2P';font-size:8px;color:#111;background:var(--cy);padding:3px 6px;margin-left:8px;animation:bt-blink 1.1s infinite">● LIVE NOW</span></sc-if>
+              </div>
+              <div style="color:var(--mut);font-size:18px;margin-top:2px">{{ s.speaker }}</div>
+              <div style="display:flex;gap:8px;margin-top:7px;flex-wrap:wrap">
+                <sc-for list="{{ s.links }}" as="l" hint-placeholder-count="0">
+                  <a href="{{ l.href }}" style="font-size:16px;color:var(--cy);border:1px solid var(--bd);padding:3px 9px;text-decoration:none;letter-spacing:.5px">{{ l.label }}</a>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+
+  <!-- past events -->
+  <div style="padding:30px 40px 8px;background:var(--bg)">
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:16px">
+      <span style="font-family:'Press Start 2P';font-size:11px;color:var(--org)">PAST EVENTS</span>
+      <span style="color:var(--mut)">Eventi passati</span>
+    </div>
+    <sc-for list="{{ pastEvents }}" as="e" hint-placeholder-count="4">
+      <div style="display:flex;align-items:center;gap:16px;padding:13px 0;border-bottom:1px solid var(--bd)">
+        <div style="font-family:'Press Start 2P';font-size:10px;color:var(--org);min-width:44px">{{ e.no }}</div>
+        <div style="flex:1;font-size:21px;color:var(--txt)">{{ e.title }}</div>
+        <div style="color:var(--mut);font-size:18px;min-width:110px">{{ e.date }}</div>
+        <div style="display:flex;gap:8px">
+          <sc-for list="{{ e.links }}" as="l" hint-placeholder-count="0"><a href="{{ l.href }}" style="font-size:16px;color:var(--cy);border:1px solid var(--bd);padding:3px 9px;text-decoration:none">{{ l.label }}</a></sc-for>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+
+  <!-- community -->
+  <div style="padding:30px 40px 36px;background:var(--bg)">
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:16px">
+      <span style="font-family:'Press Start 2P';font-size:11px;color:var(--org)">COMMUNITY</span>
+      <span style="color:var(--mut)">Comunità</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
+      <sc-for list="{{ community }}" as="c" hint-placeholder-count="6">
+        <a href="{{ c.href }}" style="display:flex;flex-direction:column;gap:2px;padding:14px 16px;background:var(--panel2);border:1px solid var(--bd);text-decoration:none">
+          <span style="font-family:'Press Start 2P';font-size:9px;color:var(--org)">{{ c.name }}</span>
+          <span style="color:var(--mut);font-size:18px">{{ c.handle }}</span>
+        </a>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="padding:16px 40px;background:#07080e;border-top:1px solid var(--bd);color:var(--mut);font-size:17px;text-align:center">bitcoinbuilderturin.xyz · built by the Torino bitcoin community · 21M</div>
+</div>
+</div>
+
+<!-- ============ OPTION 1B : UNDERGROUND METAL ============ -->
+<div class="dv-opt" id="1b">
+<div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Underground / metal — blackletter logo, mono body, high readability <b style="color:#c26a12">· recommended</b></div>
+<div class="dv-card" style="--bg:#0a0a0d;--panel:#111114;--bcol:#17171c;--org:#f7931a;--txt:#eceae6;--mut:#8e8b85;--bd:#26262c;--win:radial-gradient(circle, var(--org) 0 1px, transparent 1.5px);width:900px;background:var(--bg);color:var(--txt);font-family:'IBM Plex Mono',monospace;font-size:15px;line-height:1.55">
+
+  <!-- hero -->
+  <div style="position:relative;padding:56px 44px 40px;background:radial-gradient(1.5px 1.5px at 60px 40px,#fff,transparent),radial-gradient(1px 1px at 210px 80px,#e8ecff,transparent),radial-gradient(1px 1px at 400px 50px,#fff,transparent),radial-gradient(1.5px 1.5px at 640px 70px,#ffe3d2,transparent),radial-gradient(1px 1px at 820px 46px,#fff,transparent),var(--bg);border-bottom:1px solid var(--bd)">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:20px">
+      <div>
+        <div style="font-family:'Pirata One',serif;font-size:82px;line-height:.86;color:var(--txt);letter-spacing:1px">Builder</div>
+        <div style="font-size:16px;letter-spacing:14px;color:var(--org);margin-top:6px;padding-left:4px">TORINO</div>
+      </div>
+      <div style="text-align:right;color:var(--mut);font-size:13px;line-height:1.9;max-width:230px">
+        <div style="color:var(--org)">bitcoinbuilderturin.xyz</div>
+        Bitcoin builders meetup<br>Ritrovo dei bitcoiner · Torino
+      </div>
+    </div>
+  </div>
+
+  <!-- next event -->
+  <div style="padding:32px 44px 4px">
+    <div style="font-size:11px;letter-spacing:3px;color:var(--org)">NEXT EVENT · PROSSIMO EVENTO</div>
+    <div style="margin-top:16px;border:1px solid var(--bd);background:var(--panel)">
+      <div style="padding:26px 28px;display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:18px;border-bottom:1px solid var(--bd)">
+        <div>
+          <div style="font-family:'Pirata One',serif;font-size:38px;color:var(--txt);line-height:1">Lightning Night</div>
+          <div style="font-size:13px;color:var(--mut);margin-top:4px">Meetup #08</div>
+          <div style="margin-top:16px;font-size:16px;color:var(--org)">Thu 24 Jul 2026 · 18:30 → 22:00</div>
+          <div style="font-size:14px;color:var(--mut);margin-top:3px">Toolbox Coworking · Via A. da Montefeltro 2, Torino</div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:9px;min-width:180px">
+          <a href="#" style="background:var(--org);color:#111;font-weight:600;letter-spacing:1px;padding:12px 18px;text-decoration:none;text-align:center">RSVP → PRENOTA</a>
+          <a href="#" style="border:1px solid var(--bd);color:var(--txt);padding:11px 18px;text-decoration:none;text-align:center">+ Add to calendar</a>
+          <a href="#" style="color:var(--mut);text-decoration:none;text-align:center;font-size:13px">↳ Directions · Indicazioni</a>
+        </div>
+      </div>
+      <div style="padding:22px 28px 26px">
+        <div style="display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:3px;color:var(--org);margin-bottom:6px">AGENDA · PROGRAMMA <span style="color:var(--mut);letter-spacing:1px">— follow along</span></div>
+        <sc-for list="{{ sessions }}" as="s" hint-placeholder-count="6">
+          <div style="display:flex;gap:18px;padding:13px 0;border-bottom:1px solid var(--bd)">
+            <div style="min-width:58px;color:var(--org);font-weight:600">{{ s.time }}</div>
+            <div style="flex:1">
+              <div style="font-size:16px;color:var(--txt);font-weight:500">{{ s.title }}
+                <sc-if value="{{ s.live }}" hint-placeholder-val="{{ false }}"><span style="font-size:10px;letter-spacing:1px;color:#111;background:var(--org);padding:2px 7px;margin-left:8px;border-radius:2px;animation:bt-blink 1.1s infinite">● LIVE</span></sc-if>
+              </div>
+              <div style="color:var(--mut);font-size:13px;margin-top:1px">{{ s.speaker }}</div>
+              <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap">
+                <sc-for list="{{ s.links }}" as="l" hint-placeholder-count="0"><a href="{{ l.href }}" style="font-size:12px;letter-spacing:.5px;color:var(--org);border:1px solid var(--bd);padding:4px 10px;text-decoration:none">{{ l.label }} ↗</a></sc-for>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+
+  <!-- past events -->
+  <div style="padding:30px 44px 4px">
+    <div style="font-size:11px;letter-spacing:3px;color:var(--org);margin-bottom:12px">PAST EVENTS · EVENTI PASSATI</div>
+    <sc-for list="{{ pastEvents }}" as="e" hint-placeholder-count="4">
+      <div style="display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--bd)">
+        <div style="color:var(--org);font-weight:600;min-width:36px">{{ e.no }}</div>
+        <div style="flex:1;font-size:15px;color:var(--txt)">{{ e.title }}</div>
+        <div style="color:var(--mut);font-size:13px;min-width:104px">{{ e.date }}</div>
+        <div style="display:flex;gap:8px"><sc-for list="{{ e.links }}" as="l" hint-placeholder-count="0"><a href="{{ l.href }}" style="font-size:12px;color:var(--org);border:1px solid var(--bd);padding:4px 10px;text-decoration:none">{{ l.label }}</a></sc-for></div>
+      </div>
+    </sc-for>
+  </div>
+
+  <!-- community -->
+  <div style="padding:30px 44px 34px">
+    <div style="font-size:11px;letter-spacing:3px;color:var(--org);margin-bottom:14px">COMMUNITY · COMUNITÀ</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
+      <sc-for list="{{ community }}" as="c" hint-placeholder-count="6">
+        <a href="{{ c.href }}" style="display:flex;justify-content:space-between;align-items:center;padding:14px 16px;border:1px solid var(--bd);background:var(--panel);text-decoration:none">
+          <span style="color:var(--txt);font-weight:500">{{ c.name }}</span>
+          <span style="color:var(--mut);font-size:12px">{{ c.handle }}</span>
+        </a>
+      </sc-for>
+    </div>
+  </div>
+
+  <!-- footer skyline -->
+  <div style="position:relative;height:150px;background:#08080b;border-top:1px solid var(--bd);overflow:hidden">
+    <div style="position:absolute;bottom:0;left:6px;width:70px;height:76px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+    <div style="position:absolute;bottom:0;left:70px;width:54px;height:104px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+    <div style="position:absolute;bottom:0;left:120px;width:92px;height:62px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+    <div style="position:absolute;bottom:0;left:206px;width:58px;height:114px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+    <div style="position:absolute;bottom:110px;left:301px;width:4px;height:30px;background:var(--bcol)"></div>
+    <div style="position:absolute;bottom:136px;left:294px;width:13px;height:13px;background:var(--org);transform:rotate(45deg);box-shadow:0 0 9px var(--org);animation:bt-twk 2.4s infinite"></div>
+    <div style="position:absolute;bottom:0;left:290px;width:26px;height:110px;background:var(--bcol);background-image:var(--win);background-size:8px 12px;background-position:5px 7px"></div>
+    <div style="position:absolute;bottom:0;left:326px;width:80px;height:86px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+    <div style="position:absolute;bottom:0;left:404px;width:60px;height:110px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+    <div style="position:absolute;bottom:0;left:462px;width:100px;height:64px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+    <div style="position:absolute;bottom:0;left:560px;width:66px;height:100px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+    <div style="position:absolute;bottom:0;left:624px;width:88px;height:78px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+    <div style="position:absolute;bottom:0;left:710px;width:54px;height:114px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+    <div style="position:absolute;bottom:0;left:760px;width:96px;height:62px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+    <div style="position:absolute;bottom:0;left:852px;width:64px;height:92px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+    <div style="position:absolute;bottom:8px;left:0;right:0;text-align:center;color:var(--mut);font-size:12px;letter-spacing:1px">bitcoinbuilderturin.xyz</div>
+  </div>
+</div>
+</div>
+
+<!-- ============ OPTION 1C : CYPHERPUNK TERMINAL ============ -->
+<div class="dv-opt" id="1c">
+<div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Cypherpunk terminal — TUI window, monospace, phosphor accents</div>
+<div class="dv-card" style="--bg:#070a08;--panel:#0b0f0c;--bcol:#141a15;--org:#f6b13c;--grn:#5fd97e;--txt:#c8d6cc;--mut:#5f7568;--bd:#1b241d;--win:radial-gradient(circle, var(--org) 0 1px, transparent 1.5px);width:900px;background:var(--bg);color:var(--txt);font-family:'JetBrains Mono',monospace;font-size:14px;line-height:1.6">
+
+  <!-- title bar -->
+  <div style="display:flex;align-items:center;gap:8px;padding:10px 16px;background:#0c110d;border-bottom:1px solid var(--bd)">
+    <span style="width:11px;height:11px;border-radius:50%;background:#e05b4b"></span>
+    <span style="width:11px;height:11px;border-radius:50%;background:#e0b34b"></span>
+    <span style="width:11px;height:11px;border-radius:50%;background:var(--grn)"></span>
+    <span style="margin-left:10px;color:var(--mut);font-size:12px">builder-torino ~ /agenda — bash</span>
+  </div>
+
+  <div style="padding:26px 26px 8px">
+    <div style="color:var(--grn)">$ whoami</div>
+    <div style="font-size:34px;color:var(--org);letter-spacing:1px;margin:6px 0 2px">builder_torino<span style="display:inline-block;width:14px;height:26px;background:var(--org);margin-left:6px;vertical-align:-4px;animation:bt-caret 1s step-end infinite"></span></div>
+    <div style="color:var(--mut)"># Bitcoin builders meetup · Torino · bitcoinbuilderturin.xyz</div>
+    <div style="color:var(--mut)"># Ritrovo dei bitcoiner — build in public, verify everything</div>
+  </div>
+
+  <!-- next event -->
+  <div style="padding:26px 26px 6px">
+    <div style="color:var(--grn)">$ cat next_event.md <span style="color:var(--mut)"># prossimo evento</span></div>
+    <div style="margin-top:12px;border:1px solid var(--bd);background:var(--panel)">
+      <div style="padding:20px 22px;border-bottom:1px dashed var(--bd)">
+        <div style="color:var(--org);font-size:20px">## #08 — Lightning Night</div>
+        <div style="margin-top:10px;color:var(--txt)"><span style="color:var(--mut)">when&nbsp;&nbsp;:</span> Thu 24 Jul 2026 · 18:30 → 22:00</div>
+        <div style="color:var(--txt)"><span style="color:var(--mut)">where&nbsp;:</span> Toolbox Coworking · Via A. da Montefeltro 2, Torino</div>
+        <div style="display:flex;gap:10px;margin-top:16px;flex-wrap:wrap">
+          <a href="#" style="color:#0b0f0c;background:var(--org);font-weight:700;padding:8px 14px;text-decoration:none">[ rsvp ]</a>
+          <a href="#" style="color:var(--grn);border:1px solid var(--grn);padding:7px 14px;text-decoration:none">[ +calendar ]</a>
+          <a href="#" style="color:var(--mut);border:1px solid var(--bd);padding:7px 14px;text-decoration:none">[ directions ]</a>
+        </div>
+      </div>
+      <div style="padding:18px 22px 22px">
+        <div style="color:var(--grn)">$ ./follow_along --live <span style="color:var(--mut)"># programma</span></div>
+        <div style="margin-top:10px">
+          <sc-for list="{{ sessions }}" as="s" hint-placeholder-count="6">
+            <div style="display:flex;gap:14px;padding:9px 0;border-bottom:1px solid var(--bd)">
+              <div style="min-width:52px;color:var(--org)">{{ s.time }}</div>
+              <div style="flex:1">
+                <div style="color:var(--txt)"><span style="color:var(--mut)">→</span> {{ s.title }}
+                  <sc-if value="{{ s.live }}" hint-placeholder-val="{{ false }}"><span style="color:#0b0f0c;background:var(--grn);padding:1px 6px;font-size:11px;margin-left:6px;animation:bt-blink 1.1s infinite">LIVE</span></sc-if>
+                </div>
+                <div style="color:var(--mut);font-size:12px;padding-left:16px">{{ s.speaker }}</div>
+                <div style="display:flex;gap:8px;margin-top:5px;padding-left:16px;flex-wrap:wrap">
+                  <sc-for list="{{ s.links }}" as="l" hint-placeholder-count="0"><a href="{{ l.href }}" style="font-size:12px;color:var(--grn);text-decoration:none">[{{ l.label }}]</a></sc-for>
+                </div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- past events -->
+  <div style="padding:24px 26px 6px">
+    <div style="color:var(--grn)">$ ls past_events/ <span style="color:var(--mut)"># eventi passati</span></div>
+    <div style="margin-top:10px">
+      <sc-for list="{{ pastEvents }}" as="e" hint-placeholder-count="4">
+        <div style="display:flex;align-items:center;gap:14px;padding:9px 0;border-bottom:1px solid var(--bd)">
+          <div style="color:var(--org);min-width:34px">{{ e.no }}</div>
+          <div style="flex:1;color:var(--txt)">{{ e.title }}</div>
+          <div style="color:var(--mut);font-size:12px;min-width:100px">{{ e.date }}</div>
+          <div style="display:flex;gap:8px"><sc-for list="{{ e.links }}" as="l" hint-placeholder-count="0"><a href="{{ l.href }}" style="font-size:12px;color:var(--grn);text-decoration:none">[{{ l.label }}]</a></sc-for></div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <!-- community -->
+  <div style="padding:24px 26px 30px">
+    <div style="color:var(--grn)">$ cat links.txt <span style="color:var(--mut)"># comunità</span></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;margin-top:12px">
+      <sc-for list="{{ community }}" as="c" hint-placeholder-count="6">
+        <a href="{{ c.href }}" style="display:flex;gap:10px;text-decoration:none;padding:5px 0"><span style="color:var(--org);min-width:96px">{{ c.name }}</span><span style="color:var(--grn)">{{ c.handle }}</span></a>
+      </sc-for>
+    </div>
+  </div>
+
+  <!-- pixel skyline strip -->
+  <div style="position:relative;height:96px;background:#05070500;overflow:hidden;border-top:1px solid var(--bd)">
+    <div style="position:absolute;bottom:0;left:20px;width:60px;height:50px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 6px"></div>
+    <div style="position:absolute;bottom:0;left:78px;width:46px;height:72px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 6px"></div>
+    <div style="position:absolute;bottom:0;left:130px;width:80px;height:44px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 6px"></div>
+    <div style="position:absolute;bottom:0;left:214px;width:50px;height:76px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 6px"></div>
+    <div style="position:absolute;bottom:70px;left:296px;width:4px;height:22px;background:var(--bcol)"></div>
+    <div style="position:absolute;bottom:88px;left:290px;width:11px;height:11px;background:var(--org);transform:rotate(45deg);box-shadow:0 0 8px var(--org);animation:bt-twk 2.4s infinite"></div>
+    <div style="position:absolute;bottom:0;left:286px;width:24px;height:70px;background:var(--bcol);background-image:var(--win);background-size:8px 12px;background-position:5px 6px"></div>
+    <div style="position:absolute;bottom:0;left:320px;width:74px;height:56px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 6px"></div>
+    <div style="position:absolute;bottom:0;left:400px;width:52px;height:74px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 6px"></div>
+    <div style="position:absolute;bottom:0;left:458px;width:88px;height:46px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 6px"></div>
+    <div style="position:absolute;bottom:0;left:552px;width:58px;height:70px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 6px"></div>
+    <div style="position:absolute;bottom:0;left:616px;width:80px;height:52px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 6px"></div>
+    <div style="position:absolute;bottom:0;left:702px;width:50px;height:76px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 6px"></div>
+    <div style="position:absolute;bottom:0;left:758px;width:90px;height:46px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 6px"></div>
+    <div style="position:absolute;bottom:6px;right:20px;color:var(--mut);font-size:11px">21M · verify, don't trust</div>
+  </div>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Try next: "build out <a class="dv-oid" href="#1b">1b</a> as a real responsive page (phone + big-screen agenda)" · "make <a class="dv-oid" href="#1a">1a</a> more readable / less arcade" · "mix <a class="dv-oid" href="#1b">1b</a> logo with <a class="dv-oid" href="#1c">1c</a> live agenda" · "add EN/IT toggle" · "new directions"</p>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      sessions: [
+        { time: '18:30', title: 'Doors & pizza', speaker: 'Networking · aperitivo', live: false, links: [] },
+        { time: '19:00', title: 'Running your own Lightning node', speaker: 'Marco Rossi', live: true, links: [ {label:'Slides', href:'#'}, {label:'Repo', href:'#'} ] },
+        { time: '19:40', title: 'Coinjoin & privacy in 2026', speaker: 'Giulia Ferrero', live: false, links: [ {label:'Slides', href:'#'}, {label:'Resources', href:'#'} ] },
+        { time: '20:20', title: 'Break', speaker: '— pausa —', live: false, links: [] },
+        { time: '20:35', title: 'Workshop — build a signet faucet', speaker: 'Luca Bianchi', live: false, links: [ {label:'Repo', href:'#'}, {label:'Docs', href:'#'} ] },
+        { time: '21:15', title: 'Open floor · show & tell', speaker: 'Everyone welcome', live: false, links: [] }
+      ],
+      pastEvents: [
+        { no: '#07', title: 'Nostr & decentralized social', date: '19 Jun 2026', links: [ {label:'Recap', href:'#'}, {label:'Slides', href:'#'} ] },
+        { no: '#06', title: 'Self-custody & multisig', date: '22 May 2026', links: [ {label:'Recap', href:'#'}, {label:'Slides', href:'#'} ] },
+        { no: '#05', title: 'Mining at home', date: '24 Apr 2026', links: [ {label:'Slides', href:'#'} ] },
+        { no: '#04', title: 'Intro to Taproot', date: '20 Mar 2026', links: [ {label:'Slides', href:'#'} ] }
+      ],
+      community: [
+        { name: 'Telegram', handle: '@buildertorino', href: '#' },
+        { name: 'X', handle: '@buildertorino', href: '#' },
+        { name: 'GitHub', handle: '/builder-torino', href: '#' },
+        { name: 'Meetup', handle: 'Bitcoin Builder Torino', href: '#' },
+        { name: 'Nostr', handle: 'npub1builder…', href: '#' },
+        { name: 'Newsletter', handle: 'Subscribe', href: '#' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

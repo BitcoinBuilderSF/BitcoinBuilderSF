@@ -1,0 +1,131 @@
+/* Builders Turin — retro pixel/terminal theme, ported from the Claude Design prototype */
+
+:root{
+  --bg:#0a0b13; --panel2:#12131e; --panel3:#171a2b; --bcol:#191b2a;
+  --org:#f6b13c; --cy:#5ad1d8; --txt:#e9eaf6; --mut:#8b8fac; --bd:#262a3d;
+  --win:radial-gradient(circle, var(--org) 0 1px, transparent 1.5px);
+}
+
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:'VT323',monospace;font-size:20px;line-height:1.35}
+a{color:var(--cy);text-decoration:none;cursor:pointer}
+a:hover{color:var(--org)}
+::selection{background:var(--org);color:#111}
+
+/* HERO */
+.hero{
+  position:relative;
+  min-height:340px;
+  overflow:hidden;
+  background:
+    radial-gradient(1.5px 1.5px at 40px 44px,#fff,transparent),
+    radial-gradient(1px 1px at 160px 90px,#cfe6ff,transparent),
+    radial-gradient(2px 2px at 340px 56px,#fff,transparent),
+    radial-gradient(1px 1px at 540px 38px,#fff,transparent),
+    radial-gradient(1.5px 1.5px at 720px 96px,#ffd9c9,transparent),
+    radial-gradient(1px 1px at 900px 50px,#fff,transparent),
+    radial-gradient(1px 1px at 260px 150px,#fff,transparent),
+    radial-gradient(1px 1px at 800px 150px,#cfe6ff,transparent),
+    var(--bg)
+}
+.hero-inner{
+  position:absolute;
+  inset: 22px 0 182px 0; /* reserve clear space above skyline */
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:flex-start;
+  z-index:2;
+  padding:12px 16px 0;
+  text-align:center;
+}
+.hero-title{font-family:'Press Start 2P',monospace;font-size:38px;color:var(--org);text-shadow:5px 5px 0 #000;letter-spacing:2px}
+.hero-sub{font-family:'Press Start 2P',monospace;font-size:15px;color:var(--cy);margin-top:14px;letter-spacing:8px;text-shadow:3px 3px 0 #000}
+.hero-tag{font-size:20px;color:var(--mut);margin-top:12px;letter-spacing:.5px}
+.hero-tag .url{color:var(--cy)}
+.skyline{position:absolute;bottom:0;left:0;right:0;height:168px;z-index:1;overflow:hidden}
+.skyline-inner{position:relative;height:100%;max-width:980px;margin:0 auto}
+.bldg{position:absolute;bottom:0;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px}
+.bldg.cy{background-image:radial-gradient(circle,var(--cy) 0 1px,transparent 1.5px)}
+
+/* STICKY NAV */
+.navbar{position:sticky;top:0;z-index:10;background:rgba(10,11,19,.94);backdrop-filter:blur(6px);border-top:2px solid var(--org);border-bottom:1px solid var(--bd)}
+.navbar-inner{max-width:900px;margin:0 auto;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.navbar .brand{font-family:'Press Start 2P',monospace;font-size:11px;color:var(--org)}
+.navbar nav{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end}
+.navbar nav a{font-family:'Press Start 2P',monospace;font-size:9px;padding:9px 12px;color:var(--mut);border:2px solid var(--bd)}
+.navbar nav a:hover{color:var(--org);border-color:var(--org)}
+
+/* LAYOUT */
+.wrap{max-width:900px;margin:0 auto;padding:28px 20px}
+.section-label{display:flex;align-items:baseline;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.section-label .h{font-family:'Press Start 2P',monospace;font-size:12px;color:var(--org)}
+.section-label .s{color:var(--mut)}
+
+/* EVENT CARDS */
+.event{display:block;border:2px solid var(--org);background:var(--panel2);box-shadow:6px 6px 0 rgba(0,0,0,.5);margin-bottom:22px}
+.event-head{padding:20px 22px;color:inherit}
+.event-head .row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.badge{font-family:'Press Start 2P',monospace;font-size:8px;color:#111;background:var(--org);padding:4px 7px}
+.no{font-family:'Press Start 2P',monospace;font-size:11px;color:var(--org)}
+.event-title{font-family:'Press Start 2P',monospace;font-size:15px;color:var(--txt);line-height:1.55;margin-top:12px}
+.event-date{color:var(--cy);font-size:21px;margin-top:10px}
+
+/* COMMUNITY GRID */
+.community{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.community a{display:flex;flex-direction:column;gap:2px;padding:14px 16px;background:var(--panel2);border:1px solid var(--bd)}
+.community a:hover{border-color:var(--cy)}
+.community .nm{font-family:'Press Start 2P',monospace;font-size:9px;color:var(--org)}
+.community .hd{color:var(--mut);font-size:18px}
+
+/* EVENT / ARTICLE PAGE */
+.article{max-width:900px;margin:0 auto;padding:28px 20px 40px}
+.article h1{font-family:'Press Start 2P',monospace;font-size:18px;color:var(--org);line-height:1.5}
+.article .meta{color:var(--cy);font-size:21px;margin:6px 0 18px}
+.article h2{font-family:'Press Start 2P',monospace;font-size:12px;color:var(--org);margin-top:28px;line-height:1.5}
+.article h3{font-family:'Press Start 2P',monospace;font-size:10px;color:var(--cy);margin-top:20px;line-height:1.5}
+.article p{margin:.5rem 0}
+.article ul{padding-left:1.2rem}
+.article li{margin:.3rem 0;border-bottom:1px solid var(--bd);padding:8px 0}
+
+/* FOOTER */
+.footer{padding:16px 20px;background:#07080e;border-top:1px solid var(--bd);color:var(--mut);font-size:17px;text-align:center}
+
+/* legacy compat */
+.posts{list-style:none;padding:0}
+time{color:var(--org);opacity:.9}
+
+@media (max-width:600px){
+  .hero{
+    min-height:295px;
+    background:
+      radial-gradient(1px 1px at 60px 30px,#fff,transparent),
+      radial-gradient(1px 1px at 140px 70px,#cfe6ff,transparent),
+      radial-gradient(1.5px 1.5px at 220px 25px,#fff,transparent),
+      radial-gradient(1px 1px at 300px 85px,#fff,transparent),
+      var(--bg);
+  }
+  .hero-inner{inset:12px 0 135px 0; padding:6px 10px 0}
+  .hero-title{font-size:26px}
+  .hero-sub{font-size:12px;letter-spacing:5px;margin-top:10px}
+  .hero-tag{font-size:16px;margin-top:8px}
+
+  .skyline{height:132px}
+  .skyline-inner{max-width:100%; transform:scale(0.82); transform-origin:bottom center}
+
+  .navbar-inner{flex-direction:column; align-items:stretch; gap:6px; padding:8px 14px}
+  .navbar nav{gap:6px; justify-content:flex-start}
+  .navbar nav a{font-size:8px; padding:6px 9px}
+
+  .event-title{font-size:14px; line-height:1.35}
+  .event-date{font-size:18px}
+  .event-head{padding:14px 16px}
+
+  .community{grid-template-columns:1fr}
+}
+
+/* Only change border on actual hover devices (prevents stuck cyan on mobile tap) */
+@media (hover: hover) {
+  .event:hover{border-color:var(--cy)}
+}

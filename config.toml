@@ -1,10 +1,14 @@
-base_url = "https://bitcoinbuildersf.github.io/BitcoinBuilderSF/"
+base_url = "https://bitcoinbuilderturin.xyz"
+title = "Builders Turin"
+description = "Builders Turin — a monthly meetup on product, design, and AI tools for building on bitcoin."
+theme = "builders-turin"
 compile_sass = false
 build_search_index = false
 generate_feeds = true
 feed_filenames = ["feed.xml"]
 
 [markdown]
-highlight_code = false
+# Code highlighting is off by default in Zola; the old `highlight_code = false`
+# field was removed in newer versions, so no setting is needed here.
 
 [extra]

@@ -1,93 +1,56 @@
 +++
-title = "₿uilder 1"
-date = 2025-06-26
+title = "Builders Turin 1"
+date = 2026-07-11
 +++
 
-## [Vote on Topics](https://www.buildervoting.com/socratic_seminars/1/topics)
+## Agenda
+- 16:30–16:45 — Networking
+- 16:45–17:00 — Presentation
+- 17:00–17:45 — Socratic Seminar
+- 17:45–18:15 — Demos & Startup Showcase *(incl. closing demo — Sonar → preview Builders Turin 2)*
 
-## Intro (10 min)
+A participatory afternoon: bring questions, jump into the discussion, and share what you're building — or what you're stuck on. Plenty of Q&A throughout.
 
-- Chatham House Rules — No photos/videos
-- This is our first ₿uilder! We’re very open to feedback and ideas on how to make these events great. Feel free to suggest ideas during the meetup or afterwards
-- Define ₿uilder and purpose for starting this event series
-- Anyone can be a ₿uilder! Vibe coding makes building apps approachable and intuitive
-- Quick Show of Hands
-  - Who works for big tech? PM? Designer? Other?
-  - Who has vibe coded before? Integrated bitcoin?
-- 10 Second Intros
-  - Name
-  - What you do
-  - What you want to get out of ₿uilder
+## Intro
+- [Chatham House Rules](https://grok.com/share/bGVnYWN5LWNvcHk_0ddfe410-0f5a-466a-a2b4-835edd791e30) — no photos/video
+- First Builders Turin! 10-second intros: name · what you do · what you want out of it
 
----
+## Socratic Seminar
 
-## Vibe-Coded App Showcase
-- Anyone?
+### Lightning: reliability & the mobile problem
+- [Matt Corallo: 99% payment success is unacceptable — LN is far better than that](https://x.com/TheBlueMatt/status/2072359464171454728)
+- [LDK: async payments fix receiving on mobile](https://x.com/lightningdevkit/status/2070513005465342300)
+- [Breez SDK "Class of Q2 2026" — instant bitcoin in every app](https://x.com/Breez_Tech/status/2072681032357233042)
 
-## Startup Showcase
-- Agicash
+### Open source: control vs. cost
+- [Corallo: open source is about control, not customizability](https://x.com/TheBlueMatt/status/2071031197720047644)
+- [Xiaoyin Qu: "Open source will win AI — because it's cheaper"](https://x.com/quxiaoyin/status/2073540332353208325)
+- [GitHub killed our CI mid-release](https://x.com/TheBlueMatt/status/2069800092534468699) + [banned twice "by mistake"](https://x.com/luisschwab_/status/2069084591369924644) — FOSS infra risk
 
----
+### Quick hits: mining & dev tooling
+- [First StratumV2 block (GoMining / DMND_Sv2)](https://x.com/pavlenex/status/2070132430875267538)
+- [Fable 5 / Claude dev-tooling](https://x.com/ClaudeDevs/status/2072429181565288665)
 
-## Bitcoin Products (20 min)
+### Local spotlight
+- [Vincenzo: CLN plugin manager / Coffee plugin in Core Lightning](https://x.com/PalazzoVincenzo/status/2068045408257900705)
+- [BLOX, Piazza Solferino — a Torino hub](https://x.com/bloxspace_turin/status/2071615093402472659)
 
-- Block rolls out [Bitcoin payments on Square](https://block.xyz/inside/block-to-roll-out-bitcoin-payments-on-square) at the Bitcoin 2025 Conference in Las Vegas
-  - Steak N Shake reports [50% savings on processing fees when using BTC](https://bitcoinmagazine.com/news/steak-n-shake-reveals-bitcoin-payment-success-at-bitcoin-2025-conference)
-- Square is earning [9.7% returns](https://www.coindesk.com/tech/2025/05/29/square-flies-the-flag-for-the-lightning-network-with-97-yield-on-bitcoin-holdings) on its C= Lighting Service Provider
-  - Bitrefill reports [3.5% returns](https://x.com/bitrefill/status/1930217463779676334)
-  - Amboss launches [Rails](https://bitcoinmagazine.com/news/amboss-launches-rails-a-self-custodial-bitcoin-yield-service), a self-custody Bitcoin yield service
-- Coinbase Credit Card [preannouncement](https://bitcoinmagazine.com/news/coinbase-announces-bitcoin-rewards-credit-card-offering-up-to-4-btc-back-on-everything). 2%–4% back in BTC depending on assets held
-- [Start9 moves Knots to the Main Registry](https://x.com/start9labs/status/1934983769863364785) Previously in the Community Registry
-  - Knots at [13% market share](https://x.com/UnderCoercion/status/1934943172872044892)
-- Home equity → bitcoin: [Horizon](https://www.joinhorizon.com/) and [Sovana](https://www.sovana.io/)
-- [Lightning Wallet Market in Japan](https://x.com/DiamondHandsLN/status/1922642890271916443) 64%: Wallet of Satoshi
-- Foundation will release [Passport Prime in Q3](https://bitcoinmagazine.com/business/passport-prime-a-new-security-device-for-a-new-generation)
-- [COLDCARD Co-Sign (CCC)](https://www.youtube.com/watch?v=MjMPDUWWegw)
-- Bitkey introduces [Security Hub](https://bitkey.build/introducing-security-hub-your-bitkey-security-setup-all-in-one-place/)
-- Ledger [sunsets Nano S](https://news.bitcoin.com/ledger-to-phase-out-nano-s-model-urges-users-to-upgrade/)
-- Xverse integrates Lightning via [Sati](https://bitcoinmagazine.com/press-releases/1-5-million-users-to-access-bitcoins-lightning-network-on-xverse-thanks-to-sati)
-- Wallet of Satoshi [non-custodial wallet available again in the US](https://x.com/walletofsatoshi/status/1923875750165479768)
-- [Blitz](https://blitz-wallet.com): first Spark mobile wallet
-- Magic Eden partners with [Spark for faster and cheaper BTC settlements](https://bitcoinmagazine.com/news/magic-eden-partners-with-spark-to-bring-fast-cheap-bitcoin-settlements)
-- [Cake wallet adds Payjoin v2](https://bitcoinmagazine.com/news/cake-wallet-introduces-payjoin-v2-increasing-bitcoin-privacy-for-the-masses)
----
+## Demos & Startup Showcase
 
-## Regulatory (4 min)
+**When:** 17:45–18:15. Short live demos and pitches; discussion and Q&A on each [GitHub proposal](https://github.com/dev-crew-it/BitcoinBuilderTurin/issues).
 
-- Federal Housing Director [orders Fannie Mae to consider Crypto](https://x.com/pulte/status/1937944964656152800?s=46&t=Bn5JvR0rQQB6SFpzCAc8rQ) as an asset for obtaining mortgages
-- [Clarity Act heads to House floor for Vote](https://bitcoinmagazine.com/news/the-clarity-act-heads-to-house-floor-for-vote-with-protection-for-noncustodial-tools-intact)
-  - BRCA included in market structure bill, the [Clarity Act](https://x.com/TheBlueMatt/status/1931875497388245195)
-  - [Save our Wallets](https://saveourwallets.org)
+**Program order (proposed):**
 
----
+1. [CLN plugin manager / Coffee](https://x.com/PalazzoVincenzo/status/2068045408257900705) — Vincenzo Palazzo (local)
+2. [#11 — Hokm](https://github.com/dev-crew-it/BitcoinBuilderTurin/issues/11) — Arshia-r-m · online card game, Lightning (Breez Spark) · [hokm.unico.quest](https://hokm.unico.quest)
+3. [#13 — XPoster](https://github.com/dev-crew-it/BitcoinBuilderTurin/issues/13) — artcava · AI social automation · [XPoster](https://github.com/artcava/XPoster)
+4. [#12 — MATPay](https://github.com/dev-crew-it/BitcoinBuilderTurin/issues/12) — mgrassotti · Bitcoin payments / temporary fiat anchor · [eur-token-poc](https://github.com/mgrassotti/eur-token-poc)
+5. [#15 — Sonar](https://github.com/dev-crew-it/BitcoinBuilderTurin/issues/15) — Vincenzo Palazzo · [sonarprivacy.xyz](https://sonarprivacy.xyz/) *(closing demo — preview [Builders Turin 2](@/builder-02.md))*
 
-## Bitcoin Design (30 min)
+- Open mic if time remains
+- Experimental demos: use small amounts only
 
-- ₿-only convention for displaying bitcoin quantities
-  - [BIP-177](https://github.com/bitcoin/bips/pull/1821) describes a new approach to bitcoin units that deprecates both the use of decimals and the usage of “sats/satoshis”
-  - New page added to [Design guide](https://bitcoin.design/guide/designing-products/units-and-symbols/) with proposed best practices
-  - [Boardwalk Cash is an example of a product leading and embracing the change](https://boardwalkcash.com/wallet)
-- Seedless is safer debate
-
----
-
-## Discussions (40 min)
-
-- The emergence of vibecoding
-- TradFi payments vs. stablecoins vs. bitcoin: Where does bitcoin separate itself?
-- Mixing digital and physical: Integrating vibe-coded apps with billboards
-
----
-
-## Miscellaneous (1 min)
-
-- [Presidio Bitcoin Quantum Summit: Applications Open](https://pbquantum.com/)
-- Presidio Bitcoin Design Week in September (more info coming soon)
-- Miami ₿uilder — and hopes for more around the world!
-
----
-
-## Wrapping Up (5 min)
-
-- What went well?
-- Areas of improvement for future meetups  
+## Wrap
+- What landed? What should change next month?
+- **Next edition:** [Builders Turin 2](@/builder-02.md) — 25 Sep (privacy, E2EE, Marmot); Sonar teaser at end of today's showcase.
+- Recommended read: [Spiral x Goose: The Best is Yet to Honk](https://spiralxyz.substack.com/p/spiral-x-goose-the-best-is-yet-to)

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<style>
+ body{margin:0;background:#0a0b13}
+ a{cursor:pointer}
+ ::selection{background:#f6b13c;color:#111}
+ @keyframes bt-blink{50%{opacity:.15}}
+ @keyframes bt-twk{0%,100%{opacity:.45}50%{opacity:1}}
+</style>
+</helmet>
+
+<div ref="{{ setRoot }}" style="--bg:#0a0b13;--panel2:#12131e;--panel3:#171a2b;--bcol:#191b2a;--org:#f6b13c;--cy:#5ad1d8;--txt:#e9eaf6;--mut:#8b8fac;--bd:#262a3d;--win:radial-gradient(circle, var(--org) 0 1px, transparent 1.5px);background:var(--bg);color:var(--txt);font-family:'VT323',monospace;font-size:20px;line-height:1.35;min-height:100vh">
+
+  <sc-if value="{{ crt }}" hint-placeholder-val="{{ false }}"><div style="position:fixed;inset:0;z-index:60;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,0) 0 2px,rgba(0,0,0,.22) 2px 3px)"></div></sc-if>
+
+  <!-- HERO -->
+  <div style="position:relative;height:330px;overflow:hidden;background:radial-gradient(1.5px 1.5px at 40px 44px,#fff,transparent),radial-gradient(1px 1px at 160px 90px,#cfe6ff,transparent),radial-gradient(2px 2px at 340px 56px,#fff,transparent),radial-gradient(1px 1px at 540px 38px,#fff,transparent),radial-gradient(1.5px 1.5px at 720px 96px,#ffd9c9,transparent),radial-gradient(1px 1px at 900px 50px,#fff,transparent),radial-gradient(1px 1px at 260px 150px,#fff,transparent),radial-gradient(1px 1px at 800px 150px,#cfe6ff,transparent),var(--bg)">
+    <div style="position:absolute;top:52px;left:0;right:0;text-align:center;z-index:2">
+      <div style="font-family:'Press Start 2P';font-size:38px;color:var(--org);text-shadow:5px 5px 0 #000;letter-spacing:2px">BUILDER</div>
+      <div style="font-family:'Press Start 2P';font-size:15px;color:var(--cy);margin-top:16px;letter-spacing:8px;text-shadow:3px 3px 0 #000">TORINO</div>
+      <div style="font-size:21px;color:var(--mut);margin-top:16px;letter-spacing:.5px">{{ t.tagline }} — <span style="color:var(--cy)">bitcoinbuilderturin.xyz</span></div>
+    </div>
+    <div style="position:absolute;bottom:0;left:0;right:0;height:168px">
+      <div style="position:absolute;bottom:0;left:10px;width:74px;height:80px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:80px;width:56px;height:114px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:134px;width:96px;height:66px;background:var(--bcol);background-image:radial-gradient(circle,var(--cy) 0 1px,transparent 1.5px);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:224px;width:60px;height:126px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:122px;left:319px;width:4px;height:36px;background:var(--bcol)"></div>
+      <div style="position:absolute;bottom:152px;left:312px;width:14px;height:14px;background:var(--org);transform:rotate(45deg);box-shadow:0 0 12px var(--org);animation:bt-twk 2.2s infinite"></div>
+      <div style="position:absolute;bottom:0;left:308px;width:26px;height:122px;background:var(--bcol);background-image:var(--win);background-size:8px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:344px;width:82px;height:94px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:426px;width:62px;height:120px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:486px;width:104px;height:70px;background:var(--bcol);background-image:radial-gradient(circle,var(--cy) 0 1px,transparent 1.5px);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:590px;width:68px;height:110px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:658px;width:90px;height:84px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:748px;width:56px;height:124px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:800px;width:100px;height:68px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+      <div style="position:absolute;bottom:0;left:892px;width:120px;height:100px;background:var(--bcol);background-image:var(--win);background-size:9px 12px;background-position:5px 7px"></div>
+    </div>
+  </div>
+
+  <!-- STICKY CONTROL BAR -->
+  <div style="position:sticky;top:0;z-index:10;background:rgba(10,11,19,.94);backdrop-filter:blur(6px);border-top:2px solid var(--org);border-bottom:1px solid var(--bd)">
+    <div style="max-width:900px;margin:0 auto;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap">
+      <div style="display:flex;gap:8px">
+        <sc-for list="{{ tabs }}" as="tab" hint-placeholder-count="3">
+          <a onClick="{{ tab.onClick }}" style="font-family:'Press Start 2P';font-size:9px;padding:9px 12px;text-decoration:none;background:{{ tab.bg }};color:{{ tab.fg }};border:2px solid {{ tab.bd }}">{{ tab.label }}</a>
+        </sc-for>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <span style="color:var(--mut);font-size:17px">lang</span>
+        <div style="display:flex;gap:6px">
+          <sc-for list="{{ langBtns }}" as="lb" hint-placeholder-count="2">
+            <a onClick="{{ lb.onClick }}" style="font-family:'Press Start 2P';font-size:9px;padding:8px 10px;text-decoration:none;background:{{ lb.bg }};color:{{ lb.fg }};border:2px solid {{ lb.bd }}">{{ lb.label }}</a>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EVENTS -->
+  <div style="max-width:900px;margin:0 auto;padding:28px 20px 0">
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:18px">
+      <span style="font-family:'Press Start 2P';font-size:12px;color:var(--org)">{{ t.eventsTitle }}</span>
+      <span style="color:var(--mut)">{{ t.eventsSub }}</span>
+    </div>
+
+    <sc-for list="{{ events }}" as="e" hint-placeholder-count="3">
+      <div style="border:2px solid {{ e.border }};background:var(--panel2);box-shadow:6px 6px 0 rgba(0,0,0,.5);margin-bottom:22px">
+
+        <!-- header -->
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:14px;padding:20px 22px">
+          <a onClick="{{ e.onToggle }}" style="flex:1;display:block;text-decoration:none;color:inherit">
+            <div style="display:flex;align-items:center;gap:10px">
+              <span style="font-family:'Press Start 2P';font-size:8px;color:#111;background:{{ e.statusBg }};padding:4px 7px">{{ e.statusLabel }}</span>
+              <span style="font-family:'Press Start 2P';font-size:11px;color:var(--org)">{{ e.no }}</span>
+              <span style="color:var(--cy);font-size:20px">{{ e.chev }}</span>
+            </div>
+            <div style="font-family:'Press Start 2P';font-size:15px;color:var(--txt);line-height:1.55;margin-top:12px">{{ e.title }}</div>
+            <div style="color:var(--cy);font-size:21px;margin-top:10px">{{ e.dateLabel }}</div>
+            <div style="color:var(--mut);font-size:19px">{{ e.venue }}</div>
+          </a>
+          <sc-if value="{{ e.isUpcoming }}" hint-placeholder-val="{{ false }}">
+            <a onClick="{{ e.onRsvp }}" style="font-family:'Press Start 2P';font-size:9px;color:#111;background:{{ e.rsvpBg }};padding:11px 14px;text-decoration:none;box-shadow:3px 3px 0 #000;white-space:nowrap">{{ e.rsvpLabel }}</a>
+          </sc-if>
+        </div>
+
+        <!-- agenda body -->
+        <sc-if value="{{ e.isOpen }}" hint-placeholder-val="{{ false }}">
+          <div style="padding:0 22px 24px;border-top:1px dashed var(--bd)">
+
+            <!-- ctas -->
+            <sc-if value="{{ e.isUpcoming }}" hint-placeholder-val="{{ false }}">
+              <div style="display:flex;gap:10px;flex-wrap:wrap;padding:18px 0 6px">
+                <a href="#" style="font-family:'Press Start 2P';font-size:8px;color:var(--cy);border:2px solid var(--cy);padding:9px 12px;text-decoration:none">+ {{ t.calendar }}</a>
+                <a href="#" style="font-family:'Press Start 2P';font-size:8px;color:var(--mut);border:2px solid var(--bd);padding:9px 12px;text-decoration:none">↳ {{ t.directions }}</a>
+              </div>
+            </sc-if>
+
+            <!-- follow-along control -->
+            <div style="margin:18px 0 6px">
+              <sc-if value="{{ e.following }}" hint-placeholder-val="{{ false }}">
+                <div style="background:var(--panel3);border:2px solid var(--cy);padding:16px 18px">
+                  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+                    <span style="font-family:'Press Start 2P';font-size:9px;color:var(--cy);animation:bt-blink 1.1s infinite">● {{ t.liveNow }}</span>
+                    <span style="color:var(--mut);font-size:18px">{{ e.stepLabel }}</span>
+                  </div>
+                  <div style="font-size:24px;color:var(--txt);margin-top:12px">▸ {{ e.nowTitle }}</div>
+                  <div style="color:var(--mut);font-size:19px;margin-top:2px">{{ t.upNext }}: {{ e.nextTitle }}</div>
+                  <div style="height:10px;background:#0a0b13;border:1px solid var(--bd);margin-top:14px"><div style="height:100%;width:{{ e.progressPct }}%;background:var(--org);transition:width .25s"></div></div>
+                  <div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap">
+                    <a onClick="{{ e.onPrev }}" style="font-family:'Press Start 2P';font-size:8px;color:var(--txt);border:2px solid var(--bd);padding:9px 12px;text-decoration:none">◂ {{ t.prev }}</a>
+                    <a onClick="{{ e.onNext }}" style="font-family:'Press Start 2P';font-size:8px;color:#111;background:var(--org);padding:9px 12px;text-decoration:none;box-shadow:3px 3px 0 #000">{{ t.next }} ▸</a>
+                    <a onClick="{{ e.onStop }}" style="font-family:'Press Start 2P';font-size:8px;color:var(--mut);padding:9px 12px;text-decoration:none;margin-left:auto">✕ {{ t.stop }}</a>
+                  </div>
+                </div>
+              </sc-if>
+              <sc-if value="{{ e.notFollowing }}" hint-placeholder-val="{{ true }}">
+                <a onClick="{{ e.onFollow }}" style="display:inline-block;font-family:'Press Start 2P';font-size:9px;color:#111;background:var(--cy);padding:11px 15px;text-decoration:none;box-shadow:3px 3px 0 #000">▶ {{ t.followAlong }}</a>
+              </sc-if>
+            </div>
+
+            <!-- agenda list -->
+            <div style="display:flex;align-items:baseline;gap:10px;margin:20px 0 4px">
+              <span style="font-family:'Press Start 2P';font-size:9px;color:var(--org)">{{ t.agenda }}</span>
+              <span style="color:var(--mut)">{{ t.agendaSub }}</span>
+            </div>
+            <sc-for list="{{ e.sessions }}" as="s" hint-placeholder-count="5">
+              <div style="display:flex;gap:16px;padding:11px 0;border-bottom:1px solid var(--bd);border-left:3px solid {{ s.edge }};padding-left:{{ s.pad }};background:{{ s.bg }}">
+                <div style="min-width:58px;color:var(--org);font-size:20px">{{ s.time }}</div>
+                <div style="flex:1">
+                  <div style="font-size:21px;color:var(--txt)">{{ s.title }}
+                    <sc-if value="{{ s.live }}" hint-placeholder-val="{{ false }}"><span style="font-family:'Press Start 2P';font-size:8px;color:#111;background:var(--cy);padding:3px 6px;margin-left:8px;animation:bt-blink 1.1s infinite">● {{ t.liveNow }}</span></sc-if>
+                  </div>
+                  <div style="color:var(--mut);font-size:18px;margin-top:1px">{{ s.speaker }}</div>
+                  <div style="display:flex;gap:8px;margin-top:7px;flex-wrap:wrap">
+                    <sc-for list="{{ s.links }}" as="l" hint-placeholder-count="0"><a href="{{ l.href }}" style="font-size:16px;color:var(--cy);border:1px solid var(--bd);padding:3px 9px;text-decoration:none;letter-spacing:.5px">{{ l.label }} ↗</a></sc-for>
+                  </div>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+      </div>
+    </sc-for>
+  </div>
+
+  <!-- COMMUNITY -->
+  <div style="max-width:900px;margin:0 auto;padding:14px 20px 36px">
+    <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:16px">
+      <span style="font-family:'Press Start 2P';font-size:12px;color:var(--org)">{{ t.communityTitle }}</span>
+      <span style="color:var(--mut)">{{ t.communitySub }}</span>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px">
+      <sc-for list="{{ community }}" as="c" hint-placeholder-count="6">
+        <a href="{{ c.href }}" style="display:flex;flex-direction:column;gap:2px;padding:14px 16px;background:var(--panel2);border:1px solid var(--bd);text-decoration:none">
+          <span style="font-family:'Press Start 2P';font-size:9px;color:var(--org)">{{ c.name }}</span>
+          <span style="color:var(--mut);font-size:18px">{{ c.handle }}</span>
+        </a>
+      </sc-for>
+    </div>
+  </div>
+
+  <div style="padding:16px 20px;background:#07080e;border-top:1px solid var(--bd);color:var(--mut);font-size:17px;text-align:center">bitcoinbuilderturin.xyz · {{ t.footer }} · 21M</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;$preview&quot;: { &quot;width&quot;: 940, &quot;height&quot;: 900 },
+  &quot;accent&quot;: { &quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#f6b13c&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;options&quot;: [&quot;#f6b13c&quot;, &quot;#f7931a&quot;, &quot;#ffd23f&quot;], &quot;section&quot;: &quot;Theme&quot; },
+  &quot;accent2&quot;: { &quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#5ad1d8&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;options&quot;: [&quot;#5ad1d8&quot;, &quot;#7ad17a&quot;, &quot;#c98bff&quot;], &quot;section&quot;: &quot;Theme&quot; },
+  &quot;startLang&quot;: { &quot;editor&quot;: &quot;enum&quot;, &quot;default&quot;: &quot;en&quot;, &quot;options&quot;: [&quot;en&quot;, &quot;it&quot;], &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Content&quot; },
+  &quot;crt&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: false, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Theme&quot; }
+}">
+const I18N = {
+  en: {
+    tagline: 'Bitcoin builders meetup · Torino', eventsTitle: 'EVENTS', eventsSub: 'Eventi · tap to open',
+    upcoming: 'UPCOMING', past: 'PAST', all: 'ALL',
+    agenda: 'AGENDA', agendaSub: 'Programma', followAlong: 'FOLLOW ALONG', liveNow: 'LIVE NOW',
+    upNext: 'Up next', prev: 'PREV', next: 'NEXT', stop: 'STOP', end: 'End of agenda',
+    calendar: 'CALENDAR', directions: 'directions', rsvp: 'RSVP', rsvped: "YOU'RE IN",
+    communityTitle: 'COMMUNITY', communitySub: 'Comunità', footer: 'built by the Torino bitcoin community'
+  },
+  it: {
+    tagline: 'Ritrovo dei bitcoiner · Torino', eventsTitle: 'EVENTI', eventsSub: 'Events · tocca per aprire',
+    upcoming: 'IN ARRIVO', past: 'PASSATI', all: 'TUTTI',
+    agenda: 'PROGRAMMA', agendaSub: 'Agenda', followAlong: 'SEGUI IN DIRETTA', liveNow: 'IN DIRETTA',
+    upNext: 'Prossimo', prev: 'PREC', next: 'AVANTI', stop: 'STOP', end: 'Fine programma',
+    calendar: 'CALENDARIO', directions: 'indicazioni', rsvp: 'PRENOTA', rsvped: 'CI SEI',
+    communityTitle: 'COMUNITÀ', communitySub: 'Community', footer: 'creato dalla community bitcoin di Torino'
+  }
+};
+
+class Component extends DCLogic {
+  state = {
+    lang: (this.props && this.props.startLang) || 'en',
+    filter: 'all',
+    open: { '08': true },
+    rsvp: {},
+    live: { '08': 1 }
+  };
+
+  setRoot = (el) => { this.rootEl = el; this.applyTheme(); };
+  componentDidMount() { this.applyTheme(); }
+  componentDidUpdate() { this.applyTheme(); }
+  applyTheme() {
+    const el = this.rootEl; if (!el) return;
+    if (this.props.accent) el.style.setProperty('--org', this.props.accent);
+    if (this.props.accent2) el.style.setProperty('--cy', this.props.accent2);
+  }
+
+  data() {
+    return [
+      { id: '08', no: '#08', status: 'upcoming', title: { en: 'Lightning Night', it: 'Serata Lightning' },
+        dateEn: 'Thu 24 Jul 2026 · 18:30 → 22:00', dateIt: 'Gio 24 Lug 2026 · 18:30 → 22:00',
+        venue: 'Toolbox Coworking · Via A. da Montefeltro 2, Torino',
+        sessions: [
+          { time: '18:30', title: { en: 'Doors & pizza', it: 'Apertura & pizza' }, speaker: 'Networking · aperitivo', links: [] },
+          { time: '19:00', title: { en: 'Running your own Lightning node', it: 'Gestire il proprio nodo Lightning' }, speaker: 'Marco Rossi', links: [ {label:'Slides',href:'#'}, {label:'Repo',href:'#'} ] },
+          { time: '19:40', title: { en: 'Coinjoin & privacy in 2026', it: 'Coinjoin e privacy nel 2026' }, speaker: 'Giulia Ferrero', links: [ {label:'Slides',href:'#'}, {label:'Resources',href:'#'} ] },
+          { time: '20:20', title: { en: 'Break', it: 'Pausa' }, speaker: '—', links: [] },
+          { time: '20:35', title: { en: 'Workshop — build a signet faucet', it: 'Workshop — crea un faucet signet' }, speaker: 'Luca Bianchi', links: [ {label:'Repo',href:'#'}, {label:'Docs',href:'#'} ] },
+          { time: '21:15', title: { en: 'Open floor · show & tell', it: 'Palco aperto · show & tell' }, speaker: 'Everyone welcome', links: [] }
+        ] },
+      { id: '09', no: '#09', status: 'upcoming', title: { en: 'Mining & Energy Night', it: 'Serata Mining & Energia' },
+        dateEn: 'Fri 28 Aug 2026 · 18:30 → 22:00', dateIt: 'Ven 28 Ago 2026 · 18:30 → 22:00',
+        venue: 'Toolbox Coworking · Via A. da Montefeltro 2, Torino',
+        sessions: [
+          { time: '18:30', title: { en: 'Doors & pizza', it: 'Apertura & pizza' }, speaker: 'Networking', links: [] },
+          { time: '19:00', title: { en: 'Home mining economics in 2026', it: "L'economia del mining domestico nel 2026" }, speaker: 'Sara Conti', links: [ {label:'Slides',href:'#'} ] },
+          { time: '19:45', title: { en: 'Heat-reuse projects', it: 'Progetti di riuso del calore' }, speaker: 'Davide Neri', links: [ {label:'Slides',href:'#'} ] },
+          { time: '20:30', title: { en: 'Open floor · show & tell', it: 'Palco aperto · show & tell' }, speaker: 'Everyone welcome', links: [] }
+        ] },
+      { id: '07', no: '#07', status: 'past', title: { en: 'Nostr & decentralized social', it: 'Nostr e social decentralizzati' },
+        dateEn: '19 Jun 2026', dateIt: '19 Giu 2026', venue: 'Toolbox Coworking · Torino',
+        sessions: [
+          { time: '19:00', title: { en: 'Nostr in 30 minutes', it: 'Nostr in 30 minuti' }, speaker: 'Marco Rossi', links: [ {label:'Recap',href:'#'}, {label:'Slides',href:'#'} ] },
+          { time: '19:45', title: { en: 'Building a Nostr client', it: 'Costruire un client Nostr' }, speaker: 'Elena Verdi', links: [ {label:'Slides',href:'#'}, {label:'Repo',href:'#'} ] }
+        ] },
+      { id: '06', no: '#06', status: 'past', title: { en: 'Self-custody & multisig', it: 'Auto-custodia e multisig' },
+        dateEn: '22 May 2026', dateIt: '22 Mag 2026', venue: 'Toolbox Coworking · Torino',
+        sessions: [
+          { time: '19:00', title: { en: 'Multisig without the tears', it: 'Multisig senza lacrime' }, speaker: 'Luca Bianchi', links: [ {label:'Recap',href:'#'}, {label:'Slides',href:'#'} ] },
+          { time: '19:50', title: { en: 'Inheritance & backups', it: 'Eredità e backup' }, speaker: 'Giulia Ferrero', links: [ {label:'Slides',href:'#'} ] }
+        ] },
+      { id: '05', no: '#05', status: 'past', title: { en: 'Mining at home', it: 'Mining a casa' },
+        dateEn: '24 Apr 2026', dateIt: '24 Apr 2026', venue: 'Toolbox Coworking · Torino',
+        sessions: [
+          { time: '19:00', title: { en: 'From zero to first block reward', it: 'Da zero alla prima ricompensa' }, speaker: 'Sara Conti', links: [ {label:'Slides',href:'#'} ] }
+        ] }
+    ];
+  }
+
+  toggleOpen(id){ this.setState(s => ({ open: { ...s.open, [id]: !s.open[id] } })); }
+  toggleRsvp(id, ev){ if (ev && ev.stopPropagation) ev.stopPropagation(); this.setState(s => ({ rsvp: { ...s.rsvp, [id]: !s.rsvp[id] } })); }
+  setLang(l){ this.setState({ lang: l }); }
+  setFilter(f){ this.setState({ filter: f }); }
+  startFollow(id){ this.setState(s => ({ open: { ...s.open, [id]: true }, live: { ...s.live, [id]: 0 } })); }
+  stopFollow(id){ this.setState(s => { const l = { ...s.live }; delete l[id]; return { live: l }; }); }
+  step(id, d){ this.setState(s => { const ev = this.data().find(e => e.id === id); const max = ev.sessions.length - 1; const cur = s.live[id] == null ? 0 : s.live[id]; const nx = Math.max(0, Math.min(max, cur + d)); return { live: { ...s.live, [id]: nx } }; }); }
+
+  renderVals() {
+    const lang = this.state.lang;
+    const t = I18N[lang];
+    const filter = this.state.filter;
+    const raw = this.data().filter(e => filter === 'all' ? true : e.status === filter);
+
+    const mkTab = (key, label) => { const a = filter === key; return { label, onClick: () => this.setFilter(key), bg: a ? 'var(--org)' : 'transparent', fg: a ? '#111' : 'var(--mut)', bd: a ? 'var(--org)' : 'var(--bd)' }; };
+    const mkLang = (key, label) => { const a = lang === key; return { label, onClick: () => this.setLang(key), bg: a ? 'var(--cy)' : 'transparent', fg: a ? '#111' : 'var(--mut)', bd: a ? 'var(--cy)' : 'var(--bd)' }; };
+
+    const events = raw.map(ev => {
+      const isOpen = !!this.state.open[ev.id];
+      const li = this.state.live[ev.id];
+      const following = li != null;
+      const isUp = ev.status === 'upcoming';
+      const isRsvp = !!this.state.rsvp[ev.id];
+      const total = ev.sessions.length;
+      const sessions = ev.sessions.map((s, i) => {
+        const live = following && i === li;
+        return { time: s.time, title: s.title[lang], speaker: s.speaker, links: s.links,
+          live, edge: live ? 'var(--cy)' : 'transparent', pad: live ? '13px' : '16px', bg: live ? 'rgba(90,209,216,.10)' : 'transparent' };
+      });
+      return {
+        no: ev.no, title: ev.title[lang], venue: ev.venue,
+        dateLabel: lang === 'en' ? ev.dateEn : ev.dateIt,
+        isUpcoming: isUp, isOpen, chev: isOpen ? '▾' : '▸',
+        border: isUp ? 'var(--org)' : 'var(--bd)',
+        statusLabel: isUp ? t.upcoming : t.past, statusBg: isUp ? 'var(--org)' : 'var(--mut)',
+        rsvpLabel: isRsvp ? t.rsvped : t.rsvp, rsvpBg: isRsvp ? 'var(--cy)' : 'var(--org)',
+        following, notFollowing: !following,
+        stepLabel: following ? (li + 1) + ' / ' + total : '',
+        nowTitle: following ? ev.sessions[li].title[lang] : '',
+        nextTitle: following ? (li < total - 1 ? ev.sessions[li + 1].title[lang] : t.end) : '',
+        progressPct: following ? Math.round(((li + 1) / total) * 100) : 0,
+        sessions,
+        onToggle: () => this.toggleOpen(ev.id),
+        onRsvp: (e) => this.toggleRsvp(ev.id, e),
+        onFollow: () => this.startFollow(ev.id),
+        onStop: () => this.stopFollow(ev.id),
+        onPrev: () => this.step(ev.id, -1),
+        onNext: () => this.step(ev.id, 1)
+      };
+    });
+
+    return {
+      t, crt: this.props.crt ?? false, setRoot: this.setRoot,
+      tabs: [ mkTab('all', t.all), mkTab('upcoming', t.upcoming), mkTab('past', t.past) ],
+      langBtns: [ mkLang('en', 'EN'), mkLang('it', 'IT') ],
+      events,
+      community: [
+        { name: 'Telegram', handle: '@buildertorino', href: '#' },
+        { name: 'X', handle: '@buildertorino', href: '#' },
+        { name: 'GitHub', handle: '/builder-torino', href: '#' },
+        { name: 'Meetup', handle: 'Bitcoin Builder Torino', href: '#' },
+        { name: 'Nostr', handle: 'npub1builder…', href: '#' },
+        { name: 'Newsletter', handle: lang === 'en' ? 'Subscribe' : 'Iscriviti', href: '#' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
